@@ -10,7 +10,7 @@ import java.util.List;
 
 abstract public class BlockHelper {
     public static List<Class<?>> interactiveBlocks = new ArrayList<>(Arrays.asList(
-            AbstractChestBlock.class, AbstractFurnaceBlock.class, CraftingTableBlock.class,
+            AbstractChestBlock.class, AbstractFurnaceBlock.class, CrafterBlock.class, CraftingTableBlock.class,
             LeverBlock.class,
             DoorBlock.class, TrapdoorBlock.class, BedBlock.class, RedstoneWireBlock.class,
             ScaffoldingBlock.class,
