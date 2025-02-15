@@ -25,10 +25,16 @@ public class ActionHandler {
 
     public void onGameTick() {
         int tickRate = Configs.PRINTING_INTERVAL.getIntegerValue();
-        tick = tick % tickRate == tickRate - 1 ? 0 : tick + 1;
 
-        if (tick % tickRate != 0) {
-            return;
+        label: {
+            if (tickRate == 0) {
+                break label;
+            }
+            tick = tick % tickRate == tickRate - 1 ? 0 : tick + 1;
+
+            if (tick % tickRate != 0) {
+                return;
+            }
         }
 
         Action nextAction = actionQueue.poll();

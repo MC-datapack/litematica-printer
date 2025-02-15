@@ -13,7 +13,7 @@ public class Configs {
     private static final String GENERIC_KEY = PrinterReference.MOD_KEY + ".config.generic";
 
     // Configs settings
-    public static final ConfigInteger PRINTING_INTERVAL = new ConfigInteger("printingInterval", 12, 1, 40).apply(GENERIC_KEY);
+    public static final ConfigInteger PRINTING_INTERVAL = new ConfigInteger("printingInterval", 12, 0, 180).apply(GENERIC_KEY);
     public static final ConfigDouble PRINTING_RANGE = new ConfigDouble("printingRange", 5, 2.5, 5).apply(GENERIC_KEY);
     public static final ConfigBoolean PRINT_MODE = new ConfigBoolean("printingMode", false).apply(GENERIC_KEY);
     public static final ConfigBoolean PRINT_DEBUG = new ConfigBoolean("printingDebug", false).apply(GENERIC_KEY);
